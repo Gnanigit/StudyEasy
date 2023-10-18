@@ -1,0 +1,99 @@
+
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+  overflow: hidden;
+  animation: gradientAnimation 10s linear infinite alternate;
+  }
+  @keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #ff6b6b, #ffa5b3, #ffd3b6, #64b5f6, #2bcbba);
+        background-size: 400% 400%;
+        background-position: 0 50%;
+    }
+    100% {
+        background: linear-gradient(45deg, #2bcbba, #64b5f6, #ffd3b6, #ffa5b3, #ff6b6b);
+        background-size: 400% 400%;
+        background-position: 100% 50%;
+    }
+  }
+  .container {
+    max-width: 1000px;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #333;
+    text-align: center;
+    transition: transform 0.5s;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+.container p{
+    font-size: 25px;
+    font-weight: 700;
+}
+  
+
+  .split.left {
+    flex: 1;
+    
+  }
+
+  .split.right {
+    flex: 1;
+    
+  }
+
+  .btn, .rbtn {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s;
+    background: #e16bff;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.15);
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  .separator {
+    border-left: 2px solid #e16bff;; 
+    height: 88%; 
+    margin: 0 10px; 
+}
+  .btn:hover, .rbtn:hover {
+    transform: scale(1.05);
+  }
+
+  .aa {
+    text-decoration: none;
+    color: white;
+  }
+
+  h2 {
+    margin-top: 20px;
+    font-size: 1em;
+  }
+
+  .sign {
+    color: #2196f3;
+  }

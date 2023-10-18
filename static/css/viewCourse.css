@@ -1,0 +1,93 @@
+/* CSS Styles for View Course Page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #cde4fc;
+}
+.container{
+
+  width: 87%;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow:0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+.course{
+  border-radius: 10px;
+}
+h1 {
+  background-color: #007BFF; /* Change the background color as desired */
+  color: #fff; /* Text color */
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: #007BFF; /* Link color */
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.link-icon {
+  font-size: 1.2em; /* Adjust the icon size as needed */
+  margin-right: 5px;
+}
+
+.icon-link:hover {
+  color: #0056b3; /* Change link color on hover */
+}
+.topics{
+  border-radius: 10px;
+}
+.topic{
+  margin-left: 15px;
+  font-family: sans-serif;
+  color: #0056b3;
+}
+.links{
+  display: flex;
+  border-radius: 10px;
+}
+.link{
+  margin-left: 40px;
+}
+.icon-link{
+  display: flex;
+  border: none;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 5px;
+  box-shadow:0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.icon-link:hover{
+  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.icon-link img{
+  
+  width: 20px;
+}
