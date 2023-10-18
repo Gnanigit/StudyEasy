@@ -1,0 +1,2 @@
+# StudyEasy
+Study Resource Platform
