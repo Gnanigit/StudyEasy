@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ADMIN MAIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/9d595d1bf3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="logos">
+        <a href="index.html"><img class="logo-img" src="../images/logo.avif"></a>
+      <label class="logo">StudyEasy</label>
+    </div>
+      <ul>
+        <li class="link"><a class="active anc" href="main">Home</a></li>
+        <li class="link"><a class="anc" href="allCourses">ALL COURSES</a></li>
+        <li class="link"><a class="anc" href="addCourse">ADD COURSE</a></li>
+        <li class="link"><a class="anc" href="#">Feedback</a></li>
+        <li class="link"><a class="anc"  href="#">About</a></li>
+        <li class="profile">
+        <i class="fa-regular fa-user"></i>
+        <p class="proLink"><%= profile.name %></p></li>
+      </ul>
+    </nav>
+    <h1>Banner Slider</h1>
+
+<div class="banner">
+    <div class="slideshow-container">
+        <div class="allSlides fade">
+            <div class="numbertext">1/3</div>
+            <img src="../images/c.png" style="width:100%">
+
+            <div class="text">C Language</div>
+        </div>
+        <div class="allSlides fade">
+            <div class="numbertext">2/3</div>
+            <img src="../images/python.jpeg" style="width:100%">
+
+            <div class="text">Python Language</div>
+        </div>
+
+        <div class="allSlides fade">
+            <div class="numbertext">3/3</div>
+            <img src="../images/fullstack.jpeg" style="width:100%">
+
+            <div class="text"> Fullstack</div>
+        </div>
+        <a class="prev"
+            onclick="changeSlides(-1)"
+        >&lt;</a>
+        <a class="next"
+         onclick="changeSlides(1)"
+        >&gt;</a>
+    </div>
+
+    <div class="dots">
+        <span class="dot"
+            onclick="currentSlide(1)"
+        ></span>
+        <span class="dot"
+            onclick="currentSlide(2)"
+        ></span>
+        <span class="dot"
+            onclick="currentSlide(3)"
+        ></span>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <h1>Our Programs</h1>
+    <div class="have">
+    <div class="images">
+      <img src="../images/codingContest.avif">
+      <h2>Coding Contests</h2>
+    </div>
+    <div class="separator"></div>
+    <div class="images">
+      <img src="../images/liveClasses.avif">
+      <h2>Live Classes</h2>
+    </div>
+    <div class="separator"></div>
+    <div class="images">
+      <img src="../images/projects.avif">
+      <h2>Projects</h2>
+    </div>
+    </div>
+  </div>
+    <script>
+      let slideIndex = 1;
+      function showSlides(n){
+          let i;
+          let slides = document.getElementsByClassName("allSlides");
+          let dots = document.getElementsByClassName("dot");
+          if(n>slides.length){
+              slideIndex = 1;
+          }
+          if(n<1){
+              slideIndex = slides.length;
+          }
+  
+          for(i = 0; i<slides.length; i++){
+              slides[i].style.display = "none";
+          }
+  
+          for(i = 0; i<dots.length; i++){
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+  
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+      }
+      showSlides(slideIndex);
+  
+      function changeSlides(n){
+          showSlides(slideIndex += n);
+      }
+  
+      function currentSlide(n){
+          showSlides(slideIndex = n);
+      }
+  
+  setInterval(function(){
+      changeSlides(1);
+  },3000)
+  </script>
+  </body>
+</html>

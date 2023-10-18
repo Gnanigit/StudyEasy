@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ADD A COURSE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9d595d1bf3.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="/css/addCourse.css">
+</head>
+
+<body>
+
+  <section class="header">
+    <nav>
+      <div class="logos">
+        <a href="index.html"><img class="logo-img" src="../images/logo.avif"></a>
+      <label class="logo">StudyEasy</label>
+    </div>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <!-- <i class="fa fa-regular fa-circle-xmark"></i> -->
+            <uL>
+                <li><a href="main" class="navbar-link hover:underline" data-nav-link>HOME</a></li>
+                <li><a href="allCourses" class="navbar-link hover:underline" data-nav-link>ALL COURSES</a></li>
+                <li><a href="addCourse" class="navbar-link hover:underline" data-nav-link>ADD COURSE</a></li>
+                <li><a href="#" class="navbar-link hover:underline" data-nav-link>ABOUT</a></li>
+                <li><a href="#" class="navbar-link hover:underline" data-nav-link>FEEDBACK</a></li>
+            </uL>
+        </div>
+        <!-- <i class="fa fa-bars"></i> -->
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
+      <section class="sectionCourse" aria-label="recent post">
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">
+              Add a <strong class="strong" style="display: inline;">Course </strong>
+            </h2>
+          </div>
+          <ul class="grid-list">
+                <form action="/uploadcourse" method="POST">
+                    <input type="text" value="" name="courseImage" placeholder="Course Image URL">
+                    <input type="text" name="courseTitle" value="" placeholder="Course Title">
+                    <textarea name="content" placeholder="Course Description" minlength="10"></textarea>
+                    <div class="card-content">
+                      <input type="submit" value="ADD COURSE"> 
+                    </div>
+                </form>
+          </ul>
+        </div>
+      </section>
+ 
+      <footer>
+
+      </footer>
+</body>
+
+</html>

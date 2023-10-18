@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/dashBoard.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d595d1bf3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a class="logo-img" href="index.html"><img src="../images/logo.avif"></a>
+            <h2 class="title">Study Easy</h2>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- <i class="fa fa-regular fa-circle-xmark"></i> -->
+                <uL>
+                    <li><a href="StudyResoucePlatform">HOME</a></li>
+                    <li><a href="aboutUs">ABOUT</a></li>
+                    <li><a href="contactUs">CONTACT</a></li>
+                    <li><a href="first">LOGIN/SIGNUP</a></li>
+                </uL>
+            </div>
+            <!-- <i class="fa fa-bars"></i> -->
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <diiv class="text-box">
+            <h1>World's Biggest <br>Study Resource Platform</h1>
+            <p>A study resource website provides students with access to a wide range of educational materials, including textbooks, lecture notes, practice exams, and tutorials, to support their learning and academic success. These platforms aim to enhance students' understanding of various subjects and help them excel in their studies.
+            </p>
+            <a href="first" class="hero-btn">Start A Course</a>
+        </diiv>
+    </section>
+    <!-- -------course-------- -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Explore our diverse range of courses, tailored to ignite your passion for learning. Discover your path to knowledge with our "Courses We Offer."</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>B.Tech</h3>
+                <p>Our B.Tech program empowers students with cutting-edge technical skills and knowledge, preparing them for a dynamic career in engineering and technology. Join us to embark on a journey of innovation and problem-solving in our B.Tech course.</p>
+            </div>
+            <div class="course-col">
+                <h3>Techonlogy Based</h3>
+                <p>Embrace the digital age with our technology-based courses, designed to equip you with the skills and expertise needed to thrive in a tech-driven world. Explore the endless possibilities of innovation and advancement through our technology-focused programs.</p>
+            </div>
+            <div class="course-col">
+                <h3>Dominating Courses</h3>
+                <p>Our dominating courses lead the way in providing comprehensive knowledge and expertise in their respective fields, ensuring you stay ahead of the competition and excel in your chosen career path. Enroll today to conquer new horizons with our dominating courses.</p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- ------our facilities------- -->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Experience excellence through our state-of-the-art facilities, meticulously designed to enhance your learning and comfort. From modern classrooms to cutting-edge laboratories, we provide the ideal environment for your educational journey.</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="../images/studyresources.jpeg">
+            <h3>Study Resources</h3>
+            <p>Access a wealth of study resources to enhance your learning journey, from comprehensive textbooks to interactive online materials. Empower yourself with the tools you need for academic success through our extensive array of study resources.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="../images/chatgpt.png">
+            <h3>Chatgpt</h3>
+            <p>Harness the power of ChatGPT for studying, where personalized assistance and instant access to knowledge empower your learning journey. Elevate your academic pursuits with the invaluable support of ChatGPT.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="../images/contest.png">
+            <h3>Contests</h3>
+            <p>Challenge your intellect and compete from the comfort of your own space with our engaging online study contests. Join a community of motivated learners and showcase your knowledge and skills on a global stage.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ---footer---- -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>At our study resource website, we are dedicated to empowering learners of all backgrounds with access to quality educational materials. <br>With a commitment to knowledge dissemination, we strive to be your trusted partner on your academic journey.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>
+        <!-- <i class="fa fa-heart-o"></i> -->
+         @Gnani and Aasha</p>
+</section>
+
+
+
+<!----------Java Script------------->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

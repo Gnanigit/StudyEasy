@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/css/aboutUs_contactUs.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d595d1bf3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a class="logo-img" href="index.html"><img src="../images/logo.avif"></a>
+            <h2 class="title">Study Easy</h2>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- <i class="fa fa-regular fa-circle-xmark"></i> -->
+                <uL>
+                    <li><a href="dashBoard">HOME</a></li>
+                    <li><a href="aboutUs">ABOUT</a></li>
+                    <li><a href="contactUs">CONTACT</a></li>
+                    <li><a href="first">LOGIN/SIGNUP</a></li>
+                </uL>
+            </div>
+            <!-- <i class="fa fa-bars"></i> -->
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!---about us content--->
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>Study Resource platform</h1>
+                <p>
+                    "StudyResource.com offers a vast collection of educational materials, from textbooks to video tutorials, making it a one-stop destination for students. Our platform provides easy access to study aids and resources, enhancing the learning experience. Explore our website for comprehensive study materials and academic assistance."
+                </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="https://talibilm.pk/wp-content/uploads/2020/02/9-Most-useful-Courses-in-2020-for-professional-Life.png">
+            </div>
+        </div>
+    </section>
+
+<!-- ---footer---- -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>At our study resource website, we are dedicated to empowering learners of all backgrounds with access to quality educational materials. <br>With a commitment to knowledge dissemination, we strive to be your trusted partner on your academic journey.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>
+        <!-- <i class="fa fa-heart-o"></i> -->
+         @Gnani and Aasha</p>
+</section>
+
+
+
+<!----------Java Script------------->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

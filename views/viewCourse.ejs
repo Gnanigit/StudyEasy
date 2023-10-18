@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Course</title>
+<link rel="stylesheet" href="/css/viewCourse.css">
+</head>
+<body>
+  <div class="container">
+  <%if(courseData.length!=0){ %>
+  <h1 class="course"><%= courseData[0].courseTitle %></h1>
+  <ul>
+    <% courseData.forEach(function(topic) { %>
+      <li class="topics">
+        <h2 class="topic"><%= topic.topicTitle %></h2>
+        <div class="links">
+        <p class="link">
+          <a class="icon-link" target="_blank" href="<%= topic.link1 %>">
+            <span class="link-icon"><img src="../images/gfg.png"></span>
+            GeeksForGeeks
+          </a>
+        </p>
+        <p class="link">
+          <a class="icon-link" target="_blank" href="<%= topic.link2 %>">
+            <span class="link-icon"><img src="../images/jPoint.png"></span>
+            <span>java Point</span>
+          </a>
+        </p>
+        <p class="link">
+          <a class="icon-link" target="_blank" href="<%= topic.link3 %>">
+            <span class="link-icon"><img src="../images/w3Schools.png"></span>
+            W3 Schools
+          </a>
+        </p>
+      </div>
+      </li>
+    <% }); %>
+  </ul>
+  <% }  else { %>
+    <h1>No Data</h1>
+  <% } %>
+  </div>
+</body>
+</html>

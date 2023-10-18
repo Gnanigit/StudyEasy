@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MY COURSES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/myCourses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/9d595d1bf3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="logos">
+        <a href="index.html"><img class="logo-img" src="../images/logo.avif"></a>
+      <label class="logo">Study Easy</label>
+    </div>
+      <ul>
+        <li class="link"><a class="anc" href="studentMain?&userId=<%= encodeURIComponent(profile.Id)%>&userEmail=<%= encodeURIComponent(profile.Email)%>">Home</a></li>
+        <li class="link"><a class="anc" href="studentAllCourses?&userId=<%= encodeURIComponent(profile.Id)%>&userEmail=<%= encodeURIComponent(profile.Email)%>">ALL COURSES</a></li>
+        <li class="link"><a class="anc" href="/myCourse?&userId=<%= encodeURIComponent(profile.Id)%>&userEmail=<%= encodeURIComponent(profile.Email)%>">MY COURSES</a></li>
+      
+        <li class="link"><a class="anc"  href="#">About</a></li>
+        <li class="profile">
+        <i class="fa-regular fa-user"></i>
+        <p class="proLink"><%= profile.name %></p></li>
+      </ul>
+    </nav>
+    <section class="course-section">
+        <h1>My Courses</h1>
+        <ul class="course-list">
+            <% for (const courseTitle in courseDetails) { %>
+              <% const course = courseDetails[courseTitle]; %>
+              <li class="course-item">
+                <img src="<%= course.courseImage %>" alt="Course Image" class="course-image">
+                <h2 class="course-title"><%= course.courseTitle %></h2>
+                <p class="course-content"><%= course.content %></p>
+                <a href="/viewCourse?courseTitle=<%= encodeURIComponent(course.courseTitle) %>">
+                  <button class="add-topic">View Course</button>
+                </a>
+              </li>
+            <% } %>
+          </ul>
+          
+    </section>
+
+  </body>
+</html>

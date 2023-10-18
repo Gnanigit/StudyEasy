@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/aboutUs_contactUs.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d595d1bf3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a class="logo-img" href="index.html"><img src="../images/logo.avif"></a>
+            <h2 class="title">Study Easy</h2>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- <i class="fa fa-regular fa-circle-xmark"></i> -->
+                <uL>
+                    <li><a href="dashBoard">HOME</a></li>
+                    <li><a href="aboutUs">ABOUT</a></li>
+                    <li><a href="contactUs">CONTACT</a></li>
+                    <li><a href="first">LOGIN/SIGNUP</a></li>
+                </uL>
+            </div>
+            <!-- <i class="fa fa-bars"></i> -->
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!---contact us content--->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61139.72979014548!2d81.06178607968404!3d16.71521656959721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3614cc2ea6ae59%3A0x2e3037c889ff351b!2sEluru%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1697307390068!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </section>
+    <section class="Contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div class="first">
+                    <i class="fa fa-home" ></i>
+                    <span>
+                        <h5>XYZ,Road, ABc Building</h5>
+                        <p>Eluru,Andhra pradesh</p>
+                    </span>
+                </div>
+                <div class="first">
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>
+                            +91 123446677
+                        </h5>
+                        <p>Mon-Sat 9am-9pm</p>
+                    </span>
+                </div>
+                <div class="first">
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>aasha@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- ---footer---- -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>At our study resource website, we are dedicated to empowering learners of all backgrounds with access to quality educational materials. <br>With a commitment to knowledge dissemination, we strive to be your trusted partner on your academic journey.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>
+        <!-- <i class="fa fa-heart-o"></i> -->
+         @Gnani and Aasha</p>
+</section>
+
+
+
+<!----------Java Script------------->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
